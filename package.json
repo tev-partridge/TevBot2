@@ -1,0 +1,15 @@
+{
+  "name": "dynamite-bot",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Tev's great dynamite bot",
+  "scripts": {
+    "build": "esbuild src/TevBot2.ts --bundle --platform=node --target=node18 --format=cjs --outfile=dist/TevBot2.js",
+    "watch": "npm run build -- --watch",
+    "typecheck": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "esbuild": "^0.23.0",
+    "typescript": "^5.5.0"
+  }
+}
